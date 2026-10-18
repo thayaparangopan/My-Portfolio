@@ -1241,8 +1241,25 @@
       color: var(--text-muted);
       font-size: 0.95rem;
       line-height: 1.6;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
       flex-grow: 1;
+    }
+
+    .project-tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 18px;
+    }
+
+    .project-tech-tag {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 3px 9px;
+      border-radius: 8px;
+      background: rgba(125, 125, 125, 0.08);
+      color: var(--text-muted);
+      border: 1px solid var(--border-card);
     }
 
     .project-footer {
@@ -2084,50 +2101,71 @@
     <!-- Interactive Category Filter Buttons -->
     <div class="project-filters">
       <button class="filter-btn active" data-filter="all">All Projects</button>
-      <button class="filter-btn" data-filter="web">Web Development</button>
-      <button class="filter-btn" data-filter="dbms">DBMS & Systems</button>
-      <button class="filter-btn" data-filter="comp">Competitions</button>
+      <button class="filter-btn" data-filter="ai">AI & ML</button>
+      <button class="filter-btn" data-filter="web">Web & Full-Stack</button>
+      <button class="filter-btn" data-filter="systems">Systems & LMS</button>
     </div>
 
     <div class="projects-grid">
-      <!-- Project 1 -->
-      <div class="glass-card project-card" data-category="comp web" data-tilt>
+      <!-- Project 1: UIForge-AI -->
+      <div class="glass-card project-card" data-category="ai web" data-tilt>
         <div>
-          <span class="project-badge">Competition Project</span>
-          <h3>Website Creating Competition</h3>
-          <p>Designed and developed a fully responsive website during a university competition. Enhanced UI design capabilities, clean code structure, and teamwork under strict timelines.</p>
+          <span class="project-badge">AI / Generative Tech</span>
+          <h3>UIForge-AI</h3>
+          <p>An AI-based visual UI-to-code generation and refinement system. Uses multimodal AI vision to analyze interface screenshots, extract component hierarchies, generate production-ready React code, and perform visual comparison refinement.</p>
+          <div class="project-tech-stack">
+            <span class="project-tech-tag">React</span>
+            <span class="project-tech-tag">TypeScript</span>
+            <span class="project-tech-tag">FastAPI</span>
+            <span class="project-tech-tag">Gemini API</span>
+            <span class="project-tech-tag">PostgreSQL</span>
+            <span class="project-tech-tag">OpenCV</span>
+          </div>
         </div>
         <div class="project-footer">
-          <a href="https://github.com/thayaparangopan" target="_blank" rel="noopener" class="project-link">
-            View Project Details <i class="fa-solid fa-arrow-right"></i>
+          <a href="https://github.com/thayaparangopan/UIForge-AI" target="_blank" rel="noopener noreferrer" class="project-link">
+            Explore Repository <i class="fa-brands fa-github"></i>
           </a>
         </div>
       </div>
 
-      <!-- Project 2 -->
-      <div class="glass-card project-card" data-category="dbms web" data-tilt>
+      <!-- Project 2: Intelearn -->
+      <div class="glass-card project-card" data-category="web systems" data-tilt>
         <div>
-          <span class="project-badge">DBMS Project</span>
-          <h3>Information System & DBMS Portal</h3>
-          <p>Engineered database schemas and analytical workflows for business management. Designed SQL queries and system architecture diagrams for scalable backend data processing.</p>
+          <span class="project-badge">AI & LMS Portal</span>
+          <h3>Intelearn</h3>
+          <p>An AI-driven interactive Learning Management System (LMS) designed for higher education institutions. Features Role-Based Access Control (RBAC), bulk onboarding controllers, modular course delivery, and real-time operational analytics.</p>
+          <div class="project-tech-stack">
+            <span class="project-tech-tag">React</span>
+            <span class="project-tech-tag">Node.js</span>
+            <span class="project-tech-tag">Express.js</span>
+            <span class="project-tech-tag">Tailwind CSS</span>
+            <span class="project-tech-tag">JWT / RBAC</span>
+          </div>
         </div>
         <div class="project-footer">
-          <a href="https://github.com/thayaparangopan" target="_blank" rel="noopener" class="project-link">
-            View System Architecture <i class="fa-solid fa-arrow-right"></i>
+          <a href="https://github.com/ZamhaAmeer/intelearn" target="_blank" rel="noopener noreferrer" class="project-link">
+            Explore Repository <i class="fa-brands fa-github"></i>
           </a>
         </div>
       </div>
 
-      <!-- Project 3 -->
-      <div class="glass-card project-card" data-category="web" data-tilt>
+      <!-- Project 3: Expenso -->
+      <div class="glass-card project-card" data-category="web systems" data-tilt>
         <div>
-          <span class="project-badge">Personal Project</span>
-          <h3>Interactive Portfolio Website</h3>
-          <p>A modern, interactive portfolio featuring dynamic light/dark modes, 3D tilt effects, smooth scrolling, particle animations, and custom theme persistence.</p>
+          <span class="project-badge">FinTech / Tracker</span>
+          <h3>Expenso</h3>
+          <p>A smart expense tracking and financial management platform designed to monitor personal budgets, visualize income/expense trends, and provide categorized spending breakdowns through an intuitive modern interface.</p>
+          <div class="project-tech-stack">
+            <span class="project-tech-tag">JavaScript</span>
+            <span class="project-tech-tag">Web App</span>
+            <span class="project-tech-tag">Financial Analytics</span>
+            <span class="project-tech-tag">Data Visualization</span>
+          </div>
         </div>
         <div class="project-footer">
-          <a href="https://github.com/thayaparangopan" target="_blank" rel="noopener" class="project-link">
-            Explore Source Code <i class="fa-solid fa-arrow-right"></i>
+          <a href="https://github.com/ZamhaAmeer/expenso" target="_blank" rel="noopener noreferrer" class="project-link">
+            Explore Repository <i class="fa-brands fa-github"></i>
           </a>
         </div>
       </div>
